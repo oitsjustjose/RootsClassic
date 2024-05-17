@@ -34,11 +34,11 @@ dependencies {
 		parchment("org.parchmentmc.data:parchment-${project.parchment_version}@zip")
 	}
 
-    // Manual include of reach-entity-attributes because Porting-Lib:base depends on it but can't find it at its current Maven URL
+	// Manual include of reach-entity-attributes because Porting-Lib:base depends on it but can't find it at its current Maven URL
 	modImplementation(include("com.jamieswhiteshirt:reach-entity-attributes:2.4.0"))
-    // Porting-Lib has now broken out into smaller submodules to keep the package light
-    //  These are each of the specific required includes for this project. Full list here:
-    //  https://github.com/Fabricators-of-Create/Porting-Lib?tab=readme-ov-file#modules
+	// Porting-Lib has now broken out into smaller submodules to keep the package light
+	//  These are each of the specific required includes for this project. Full list here:
+	//  https://github.com/Fabricators-of-Create/Porting-Lib?tab=readme-ov-file#modules
 	modImplementation(include("io.github.fabricators_of_create.Porting-Lib:base:${project.portinglib_version}"))
 	modImplementation(include("io.github.fabricators_of_create.Porting-Lib:client_events:${project.portinglib_version}"))
 	modImplementation(include("io.github.fabricators_of_create.Porting-Lib:common:${project.portinglib_version}"))
